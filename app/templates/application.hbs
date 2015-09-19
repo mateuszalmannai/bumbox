@@ -10,7 +10,12 @@
     </a>
     <p class="album-name">{{name}}</p>
     <p class="album-artist">{{artist}}</p>
-    <p class="song-count">8 songs</p>
+    <p class="song-count">
+        8 songs
+        {{#if isExplicit}}
+        <span class='explicit'>EXPLICIT</span>
+        {{/if}}
+    </p>
   </div>
   {{/each}}
 </div>
